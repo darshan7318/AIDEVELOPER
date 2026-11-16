@@ -1,0 +1,140 @@
+{
+  "phases": [
+    {
+      "id": "PHASE-00",
+      "title": "Baseline Diagnostic and Gap Identification",
+      "path": "CURRICULUM/PHASE-00-DIAGNOSTIC",
+      "objective": "Assess learner's baseline across DSA, C#/.NET, SQL, frontend, system design, debugging, FDE, and communication.",
+      "prerequisites": [],
+      "gate_criteria": "Completion of baseline diagnostic across all 10 dimensions with initial competency matrix populated."
+    },
+    {
+      "id": "PHASE-01",
+      "title": "Computer Science & Operating Systems Fundamentals",
+      "path": "CURRICULUM/PHASE-01-CS-FUNDAMENTALS",
+      "objective": "Master memory layouts, CPU cache hierarchies, processes, threads, virtual memory, networking protocols (TCP/TLS/HTTP).",
+      "prerequisites": [
+        "PHASE-00"
+      ],
+      "gate_criteria": "Explain OS scheduling and memory management from first principles; build a socket/protocol simulator."
+    },
+    {
+      "id": "PHASE-02",
+      "title": "Data Structures & Algorithmic Problem Solving (DSA)",
+      "path": "CURRICULUM/PHASE-02-DSA",
+      "objective": "Master 26 core algorithmic patterns in C# under interview constraints.",
+      "prerequisites": [
+        "PHASE-00"
+      ],
+      "gate_criteria": "Solve unseen LeetCode medium problems independently within 25 minutes with formal complexity proofs."
+    },
+    {
+      "id": "PHASE-03",
+      "title": "Advanced C# & .NET Runtime Internals",
+      "path": "CURRICULUM/PHASE-03-CSHARP-DOTNET",
+      "objective": "Master CLR execution, JIT, GC generation mechanics, Span<T>, ValueTask, async state machines, memory profiling.",
+      "prerequisites": [
+        "PHASE-01"
+      ],
+      "gate_criteria": "Demonstrate zero-allocation parsers, diagnose memory leaks, explain thread pool work-stealing."
+    },
+    {
+      "id": "PHASE-04",
+      "title": "ASP.NET Core Backend Architecture",
+      "path": "CURRICULUM/PHASE-04-BACKEND",
+      "objective": "Build high-throughput, resilient backend services using Minimal APIs, middleware, authentication, and DI best practices.",
+      "prerequisites": [
+        "PHASE-03"
+      ],
+      "gate_criteria": "Design and build a production-grade resilient modular service with integration test suite."
+    },
+    {
+      "id": "PHASE-05",
+      "title": "Entity Framework Core & Database Engineering",
+      "path": "CURRICULUM/PHASE-05-DATABASE",
+      "objective": "Master relational database indexing, execution plan analysis, transaction isolation, deadlocks, and EF Core mechanics.",
+      "prerequisites": [
+        "PHASE-04"
+      ],
+      "gate_criteria": "Optimize slow queries using index strategies, solve N+1 traps, design concurrency conflict handlers."
+    },
+    {
+      "id": "PHASE-06",
+      "title": "Modern Frontend Engineering (Angular & React)",
+      "path": "CURRICULUM/PHASE-06-FRONTEND",
+      "objective": "Deep-dive Angular (Signals, RxJS, DI) and React (Hooks, reconciliation, state management) as rigorous software disciplines.",
+      "prerequisites": [
+        "PHASE-00"
+      ],
+      "gate_criteria": "Build accessible, performant component workflows with deterministic state management and testing."
+    },
+    {
+      "id": "PHASE-07",
+      "title": "Full-Stack Architecture & Delivery",
+      "path": "CURRICULUM/PHASE-07-FULLSTACK",
+      "objective": "End-to-end integration between modern SPAs and .NET backends with auth contracts, error boundaries, and observability.",
+      "prerequisites": [
+        "PHASE-04",
+        "PHASE-05",
+        "PHASE-06"
+      ],
+      "gate_criteria": "Deliver an end-to-end multi-tier application with automated end-to-end tests."
+    },
+    {
+      "id": "PHASE-08",
+      "title": "Low-Level Design (LLD) & High-Level System Design (HLD)",
+      "path": "CURRICULUM/PHASE-08-SYSTEM-DESIGN",
+      "objective": "Design scalable architectures with back-of-the-envelope capacity estimations, trade-off analysis, and fault tolerance.",
+      "prerequisites": [
+        "PHASE-04",
+        "PHASE-05"
+      ],
+      "gate_criteria": "Successfully complete mock system design interviews for high-scale distributed platforms."
+    },
+    {
+      "id": "PHASE-09",
+      "title": "Distributed Systems, Cloud & Site Reliability (SRE)",
+      "path": "CURRICULUM/PHASE-09-DISTRIBUTED-SYSTEMS",
+      "objective": "Master consensus, partitioning, replication, OpenTelemetry tracing, SLO/SLI budgets, and production incident response.",
+      "prerequisites": [
+        "PHASE-08"
+      ],
+      "gate_criteria": "Diagnose simulated distributed deadlocks and network partitions; execute blue/green rollbacks."
+    },
+    {
+      "id": "PHASE-10",
+      "title": "Forward Deployed Engineering (FDE) & Customer Problem Solving",
+      "path": "CURRICULUM/PHASE-10-FDE",
+      "objective": "Navigate ambiguous client requirements, enterprise identity, legacy network boundaries, and rapid prototyping.",
+      "prerequisites": [
+        "PHASE-07",
+        "PHASE-08"
+      ],
+      "gate_criteria": "Deliver a complete customer solution proposal, integration prototype, runbook, and handover artifact."
+    },
+    {
+      "id": "PHASE-11",
+      "title": "Agentic AI Systems Engineering",
+      "path": "CURRICULUM/PHASE-11-AGENTIC-AI",
+      "objective": "Build production-grade AI agent systems: tool calling, typed planning, memory graphs, prompt defense, and eval metrics.",
+      "prerequisites": [
+        "PHASE-03",
+        "PHASE-04"
+      ],
+      "gate_criteria": "Implement and evaluate an autonomous multi-agent system with typed tools and safety guardrails."
+    },
+    {
+      "id": "PHASE-12",
+      "title": "Staff/Principal Engineering & Technical Leadership",
+      "path": "CURRICULUM/PHASE-12-STAFF-ENGINEERING",
+      "objective": "Demonstrate executive communication, cross-team technical governance, RFC writing, and staff-level interview excellence.",
+      "prerequisites": [
+        "PHASE-08",
+        "PHASE-09",
+        "PHASE-10",
+        "PHASE-11"
+      ],
+      "gate_criteria": "Score Advanced/Mastered across senior/staff interview simulations and publish an architectural RFC."
+    }
+  ]
+}

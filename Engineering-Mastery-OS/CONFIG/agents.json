@@ -1,0 +1,181 @@
+{
+  "orchestrator": {
+    "id": "agent-00",
+    "name": "Master Engineering Orchestrator",
+    "prompt_path": "PROMPTS/master/orchestrator.md",
+    "role": "Chief Engineering Orchestrator",
+    "responsibilities": [
+      "Curriculum roadmapping and phase gate enforcement",
+      "Session initialization and context resumption",
+      "Specialist selection and delegation",
+      "Conflict resolution with primary sources",
+      "Final quality synthesis and progress ledger persistence"
+    ]
+  },
+  "specialists": [
+    {
+      "id": "agent-01",
+      "code": "cs-fundamentals",
+      "name": "CS Fundamentals Researcher",
+      "prompt_path": "PROMPTS/agents/cs-fundamentals.md",
+      "domain": "Computer science, CPU architecture, memory hierarchy, operating systems, networking, compilers",
+      "tools": [
+        "web_search",
+        "read_file",
+        "run_command"
+      ]
+    },
+    {
+      "id": "agent-02",
+      "code": "dsa",
+      "name": "DSA and LeetCode Coach",
+      "prompt_path": "PROMPTS/agents/dsa.md",
+      "domain": "Algorithms, data structures, complexity proofs, progressive hint coaching, canonical LeetCode tracking",
+      "tools": [
+        "run_command",
+        "read_file",
+        "write_file"
+      ]
+    },
+    {
+      "id": "agent-03",
+      "code": "dotnet-runtime",
+      "name": "C# and .NET Runtime Specialist",
+      "prompt_path": "PROMPTS/agents/dotnet-runtime.md",
+      "domain": "C# 12/13 semantics, CLR, JIT compilation, GC generations, thread pool, memory models, Span<T>/Memory<T>",
+      "tools": [
+        "dotnet_cli",
+        "run_command",
+        "web_search",
+        "read_file"
+      ]
+    },
+    {
+      "id": "agent-04",
+      "code": "backend",
+      "name": "ASP.NET Core Backend Architect",
+      "prompt_path": "PROMPTS/agents/backend.md",
+      "domain": "Middleware pipeline, DI scopes, authentication/authorization, minimal APIs, resilience, modular monoliths",
+      "tools": [
+        "dotnet_cli",
+        "run_command",
+        "web_search",
+        "read_file",
+        "write_file"
+      ]
+    },
+    {
+      "id": "agent-05",
+      "code": "database",
+      "name": "EF Core and Database Engineer",
+      "prompt_path": "PROMPTS/agents/database.md",
+      "domain": "Relational schema design, indexes, query execution plans, transactions, EF Core change tracking, migrations",
+      "tools": [
+        "dotnet_cli",
+        "run_command",
+        "sql_cli",
+        "read_file",
+        "write_file"
+      ]
+    },
+    {
+      "id": "agent-06",
+      "code": "frontend",
+      "name": "Angular and React Specialist",
+      "prompt_path": "PROMPTS/agents/frontend.md",
+      "domain": "TypeScript, browser rendering, Angular signals/RxJS, React hooks/reconciliation, state management, accessibility",
+      "tools": [
+        "node_cli",
+        "run_command",
+        "web_search",
+        "read_file",
+        "write_file"
+      ]
+    },
+    {
+      "id": "agent-07",
+      "code": "system-design",
+      "name": "System Design Specialist",
+      "prompt_path": "PROMPTS/agents/system-design.md",
+      "domain": "LLD, SOLID, design patterns, HLD, capacity estimation, distributed transactions, sharding, caching, event-driven",
+      "tools": [
+        "web_search",
+        "read_file",
+        "write_file"
+      ]
+    },
+    {
+      "id": "agent-08",
+      "code": "fde",
+      "name": "Forward Deployed Engineer Coach",
+      "prompt_path": "PROMPTS/agents/fde.md",
+      "domain": "Customer discovery, ambiguous enterprise requirements, legacy integration, API adapters, operational handover",
+      "tools": [
+        "read_file",
+        "write_file",
+        "web_search"
+      ]
+    },
+    {
+      "id": "agent-09",
+      "code": "devops-sre",
+      "name": "DevOps, Cloud and SRE Specialist",
+      "prompt_path": "PROMPTS/agents/devops-sre.md",
+      "domain": "CI/CD, Docker, Windows/Linux deployment, OpenTelemetry, Prometheus, SLO/SLI, incident response, rollback",
+      "tools": [
+        "run_command",
+        "read_file",
+        "write_file",
+        "web_search"
+      ]
+    },
+    {
+      "id": "agent-10",
+      "code": "security",
+      "name": "Application Security Engineer",
+      "prompt_path": "PROMPTS/agents/security.md",
+      "domain": "Threat modeling, OWASP Top 10, auth protocols, cryptography, SQLi prevention, secrets management, least privilege",
+      "tools": [
+        "web_search",
+        "read_file",
+        "write_file",
+        "run_command"
+      ]
+    },
+    {
+      "id": "agent-11",
+      "code": "code-reviewer",
+      "name": "Engineering Quality Reviewer",
+      "prompt_path": "PROMPTS/agents/code-reviewer.md",
+      "domain": "Defect classification, correctness verification, SOLID compliance, complexity, performance, resource disposal",
+      "tools": [
+        "read_file",
+        "run_command"
+      ]
+    },
+    {
+      "id": "agent-12",
+      "code": "interviewer",
+      "name": "Senior/Staff Interviewer",
+      "prompt_path": "PROMPTS/agents/interviewer.md",
+      "domain": "Mock technical interviews, deep probe follow-ups, senior/staff bar evaluation, communication scoring",
+      "tools": [
+        "read_file"
+      ]
+    },
+    {
+      "id": "agent-13",
+      "code": "agentic-ai",
+      "name": "Agentic AI Systems Engineer",
+      "prompt_path": "PROMPTS/agents/agentic-ai.md",
+      "domain": "Tool calling, typed planner/executor, graph orchestration, memory, prompt injection defense, agent evaluation",
+      "tools": [
+        "python_cli",
+        "run_command",
+        "web_search",
+        "read_file",
+        "write_file"
+      ]
+    }
+  ]
+}

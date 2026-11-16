@@ -1,0 +1,106 @@
+{
+  "version": "1.0.0",
+  "system_name": "Engineering Mastery OS",
+  "environment": {
+    "os": "Windows 11 Home (AMD64)",
+    "workspace_root": "C:\\AI-Developer\\Engineering-Mastery-OS",
+    "primary_stack": {
+      "primary_language": "C#",
+      "dotnet_baseline_version": "8.0",
+      "dotnet_active_version": "9.0.314",
+      "installed_sdks": [
+        "6.0.428",
+        "8.0.319",
+        "9.0.314"
+      ],
+      "backend_framework": "ASP.NET Core",
+      "orm": "Entity Framework Core",
+      "databases": [
+        "SQL Server",
+        "SQLite"
+      ],
+      "frontend_frameworks": [
+        "Angular",
+        "React",
+        "TypeScript",
+        "JavaScript"
+      ],
+      "secondary_languages": [
+        "Python 3.14",
+        "C++"
+      ]
+    },
+    "ollama": {
+      "installed": true,
+      "version": "0.40.13",
+      "endpoint": "http://127.0.0.1:11434",
+      "status": "Installed (Service not currently auto-started; manual 'ollama serve' required for local inference)"
+    }
+  },
+  "training_configuration": {
+    "target_level": "Senior / Staff Software Engineer & Forward Deployed Engineer (8-10 years engineering maturity)",
+    "learner_initial_baseline": "~4 years professional experience",
+    "default_session_minutes": 120,
+    "session_distribution": {
+      "retrieval_and_revision_minutes": 15,
+      "dsa_challenge_minutes": 30,
+      "deep_technical_lesson_minutes": 30,
+      "hands_on_implementation_and_tests_minutes": 30,
+      "rotating_simulation_minutes": 10,
+      "review_and_progress_minutes": 5
+    },
+    "rotating_tracks": [
+      "system_design_hld",
+      "fde_customer_scenario",
+      "production_debugging",
+      "security_threat_model",
+      "devops_sre_incident",
+      "agentic_ai_exercise"
+    ],
+    "teaching_sequence": [
+      "Fundamentals",
+      "Internals",
+      "Mental Model",
+      "Practical Example",
+      "Production Example",
+      "Testing",
+      "Performance",
+      "Security",
+      "Interview Questions"
+    ]
+  },
+  "agent_platform": {
+    "coordination_model": "Hybrid Native Subagents + Orchestrator CLI + Dynamic Workflows",
+    "supported_execution_modes": [
+      "Antigravity Subagent (define_subagent / invoke_subagent)",
+      "Dynamic Agent Workflows (run_workflow)",
+      "Native Swarm (swarm add / status)",
+      "Sequential Local CLI (orchestrator_cli.py)"
+    ],
+    "default_execution_mode": "native_subagents"
+  },
+  "research_policy": {
+    "auto_research_on": [
+      "version_sensitive_claims",
+      "runtime_internals",
+      "security_advisories",
+      "disputed_claims"
+    ],
+    "primary_sources_priority": [
+      "learn.microsoft.com",
+      "github.com/dotnet/runtime",
+      "github.com/dotnet/aspnetcore",
+      "github.com/dotnet/efcore",
+      "angular.dev",
+      "react.dev",
+      "owasp.org",
+      "cve.mitre.org"
+    ]
+  },
+  "safety_boundaries": {
+    "destructive_operations_require_approval": true,
+    "unrestricted_shell_execution": false,
+    "untrusted_data_defense": true,
+    "external_purchases_allowed": false
+  }
+}

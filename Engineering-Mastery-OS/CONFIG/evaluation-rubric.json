@@ -1,0 +1,105 @@
+{
+  "dimensions": [
+    {
+      "name": "conceptual_understanding",
+      "max_score": 20,
+      "description": "Depth of mental model, first-principles grasp, explanation accuracy"
+    },
+    {
+      "name": "problem_solving",
+      "max_score": 15,
+      "description": "Decomposition, invariant recognition, edge-case anticipation"
+    },
+    {
+      "name": "implementation",
+      "max_score": 20,
+      "description": "Code structure, idiom usage, clarity, memory efficiency, zero-allocation where needed"
+    },
+    {
+      "name": "correctness_and_testing",
+      "max_score": 15,
+      "description": "Unit/integration test coverage, edge-case assertions, bug-free execution"
+    },
+    {
+      "name": "architecture_and_tradeoffs",
+      "max_score": 15,
+      "description": "Separation of concerns, design patterns, failure modes, complexity justification"
+    },
+    {
+      "name": "communication",
+      "max_score": 10,
+      "description": "Concise technical articulation, stakeholder framing, clarity under questioning"
+    },
+    {
+      "name": "engineering_discipline",
+      "max_score": 5,
+      "description": "Verification mindset, source validation, disciplined error handling"
+    }
+  ],
+  "total_score": 100,
+  "score_tiers": [
+    {
+      "range": [
+        0,
+        39
+      ],
+      "tier": "Fundamental Gaps",
+      "action": "Remediate foundational concepts before progressing"
+    },
+    {
+      "range": [
+        40,
+        59
+      ],
+      "tier": "Developing",
+      "action": "Targeted guided drills and structured hints"
+    },
+    {
+      "range": [
+        60,
+        74
+      ],
+      "tier": "Competent",
+      "action": "Increase independent problem difficulty and add edge cases"
+    },
+    {
+      "range": [
+        75,
+        84
+      ],
+      "tier": "Strong",
+      "action": "Introduce production constraints and architectural variations"
+    },
+    {
+      "range": [
+        85,
+        94
+      ],
+      "tier": "Advanced",
+      "action": "Challenge with staff-level ambiguity and optimization limits"
+    },
+    {
+      "range": [
+        95,
+        100
+      ],
+      "tier": "Exceptional",
+      "action": "Peer review level; assign mentoring/RFC authorship"
+    }
+  ],
+  "dsa_attempt_classes": [
+    "independent_no_hints",
+    "independent_conceptual_hint",
+    "needed_implementation_hint",
+    "needed_solution_walkthrough",
+    "copied_reproduced_not_mastered"
+  ],
+  "mastery_gate_requirements": [
+    "Accurate conceptual explanation without memorized tropes",
+    "Independent implementation without solution copying",
+    "Passing comprehensive unit/edge-case tests",
+    "Demonstrated ability to debug failure modes",
+    "Explicit articulation of trade-offs and alternatives",
+    "Successful transfer to an unfamiliar variation"
+  ]
+}
